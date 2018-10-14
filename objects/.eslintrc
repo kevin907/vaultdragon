@@ -1,0 +1,27 @@
+{
+  "extends": "standard",
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "max-len": [ 1, { "code": 80 } ],
+    "space-before-function-paren": ["error", "never"],
+    "comma-dangle": ["error", "always-multiline"],
+    "keyword-spacing": ["error", {
+      "overrides": {
+        "if": {
+          "after": false
+        },
+        "for": {
+          "after": false
+        },
+        "while": {
+          "after": false
+        },
+        "switch": {
+          "after": false
+        }
+      }
+    }]
+  }
+}
